@@ -1,260 +1,192 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Zeld's Portfolio | Freelance Video Editor & Graphic Designer</title>
-  <meta name="description" content="With over 2 years of video editing experience, Zeld produces engaging, high-quality content with creative storytelling, smooth pacing, and attention-grabbing edits.">
-  
-  <!-- SEO Tags -->
-  <meta property="og:title" content="Zeld's Portfolio | Video Editor & Graphic Designer">
-  <meta property="og:description" content="With over 2 years of video editing experience, Zeld produces engaging, high-quality content that connects with audiences.">
-  <meta property="og:image" content="assets/man_posing.jpg">
-  <meta property="og:type" content="website">
-  
-  <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeld's Frame by Frame | Video Editor and Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Ambient Fluid Ink Background Video -->
-  <div class="bg-video-container">
-    <video autoplay loop muted playsinline>
-      <source src="assets/ink_video.mp4" type="video/mp4">
-    </video>
+  <!-- Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="l-text">FRAME BY FRAME</div>
+    <div class="l-bar"></div>
   </div>
 
-  <!-- Header Navigation -->
-  <header>
-    <div class="container">
-      <nav class="nav-bar" aria-label="Primary Navigation">
-        <a href="#home" class="logo" id="brand-logo" aria-label="Zeld's Portfolio Home">
-          <div class="logo-icon">Z</div>
-          <span>Zeld's Portfolio</span>
+  <!-- Nav -->
+  <nav>
+    <a href="#hero" class="nav-logo">ZELD'S</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#showreel">Showreel</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-stripe"></div>
+    <div class="hero-inner">
+      <p class="hero-tag">Video Editing & Design</p>
+      <h1 class="hero-name">
+        <span class="name-zelds">ZELD'S</span>
+        <span class="hero-fbf">
+          <span class="word-frame-white">FRAME</span>
+          <span class="word-by">by</span>
+          <span class="word-frame-red">FRAME</span>
+        </span>
+      </h1>
+      <p class="hero-sub">Freelance Video Editor &amp; Graphic Designer</p>
+      <div class="hero-divider"></div>
+    </div>
+    <div class="scroll-hint">Scroll</div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <!-- duplicated for seamless loop -->
+      <span class="ticker-item">Video Editing</span>
+      <span class="ticker-item">Graphic Design</span>
+      <span class="ticker-item">Creative Storytelling</span>
+      <span class="ticker-item">Motion Graphics</span>
+      <span class="ticker-item">Content Creation</span>
+      <span class="ticker-item">2+ Years Experience</span>
+      <span class="ticker-item">Available for Work</span>
+      <span class="ticker-item">Video Editing</span>
+      <span class="ticker-item">Graphic Design</span>
+      <span class="ticker-item">Creative Storytelling</span>
+      <span class="ticker-item">Motion Graphics</span>
+      <span class="ticker-item">Content Creation</span>
+      <span class="ticker-item">2+ Years Experience</span>
+      <span class="ticker-item">Available for Work</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div>
+      <p class="about-label reveal">- About Me</p>
+      <h2 class="about-heading reveal reveal-delay-1">
+        THE<br>
+        <em>Story</em><br>
+        BEHIND<br>
+        FRAME BY FRAME
+      </h2>
+      <p class="about-body reveal reveal-delay-2">
+        With over 2 years of video editing experience, I've worked with popular content creators to produce engaging,
+        high-quality content. I specialize in creative storytelling, smooth pacing, and attention-grabbing edits that
+        help videos stand out and connect with audiences.
+      </p>
+    </div>
+    <div class="about-stats reveal reveal-delay-2">
+      <div class="stat-box">
+        <div class="stat-num">2+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Creative Ideas</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Commitment</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Passion Driven</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showreel -->
+  <section id="showreel">
+    <div class="reel-label" aria-hidden="true">SHOWREEL</div>
+    <div class="reel-inner">
+      <p class="reel-tag reveal">- Watch My Work</p>
+      <h2 class="reel-heading reveal reveal-delay-1">SHOWREEL</h2>
+      <div class="reel-preview reveal reveal-delay-2">
+        <iframe
+          src="https://drive.google.com/file/d/1zha39bRi6Nd2dIxXZQNRMtEUIP5lx8Fs/preview"
+          title="Zeld's showreel preview"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="reveal reveal-delay-3">
+        <a href="https://drive.google.com/file/d/1zha39bRi6Nd2dIxXZQNRMtEUIP5lx8Fs/view?usp=sharing" target="_blank"
+          rel="noopener noreferrer" class="film-strip">
+          <div class="film-perfs">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="film-body">
+            <span class="film-cta-label">Google Drive</span>
+            <span class="film-cta-main">CLICK TO WATCH</span>
+          </div>
+          <div class="film-arrow">-&gt;</div>
+          <div class="film-perfs">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
         </a>
-        
-        <div class="nav-links" id="desktop-menu" aria-label="Main Menu">
-          <a href="#home" class="active" id="nav-home">Intro</a>
-          <a href="#showreel" id="nav-showreel">Showreel</a>
-          <a href="#artworks" id="nav-artworks">Artworks</a>
-          <a href="#contact" id="nav-contact">Contact</a>
-          <a href="#contact" class="cta-btn" id="nav-cta">Hire Me</a>
-        </div>
-        
-        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
-          &#x2630;
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Mobile Dropdown Menu -->
-  <div class="mobile-nav-menu" id="mobile-nav-menu" aria-label="Mobile Navigation Menu">
-    <a href="#home" class="active">Intro</a>
-    <a href="#showreel">Showreel</a>
-    <a href="#artworks">Artworks</a>
-    <a href="#contact">Contact</a>
-    <a href="#contact" class="cta-btn mobile-menu-cta">Hire Me</a>
-  </div>
-
-  <main>
-    <!-- Hero / Intro Section -->
-    <section id="home" class="hero-section" aria-label="Introduction">
-      <div class="container">
-        <div class="hero-wrapper">
-          <div class="hero-info">
-            <span class="hero-subtitle">Freelance Portfolio</span>
-            <div class="hero-title-container">
-              <h1 class="hero-title-giant">Zeld's</h1>
-              <span class="hero-title-by">by Vxizocery</span>
-              <span class="hero-title-frame">Portfolio</span>
-            </div>
-            
-            <h2 class="hero-tagline">
-              Freelance Video Editor &<br>Graphic Designer
-            </h2>
-            
-            <p class="hero-desc">
-              With over 2 years of video editing experience, I've worked with popular content creators to produce engaging, high quality content. I specialize in creative storytelling, smooth pacing, and attention grabbing edits that help videos stand out and connect with audiences.
-            </p>
-            
-            <div class="hero-actions">
-              <a href="#showreel" class="cta-btn" id="hero-cta-btn">Explore Work</a>
-              <a href="https://www.canva.com/design/DAHLj43pSRE/hliQOKRc0N9rMV8QY36PGA/view"
-                 target="_blank"
-                 rel="noopener"
-                 class="ghost-btn">Original Canva</a>
-            </div>
-          </div>
-          
-          <div class="hero-portrait">
-            <!-- Frame decorative overlay line -->
-            <div class="frame-decor-line"></div>
-            
-            <div class="portrait-frame">
-              <img src="assets/man_posing.jpg" alt="Zeld portrait" loading="eager">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Showreel Section -->
-    <section id="showreel" class="showreel-section" aria-label="Showreel Video">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title-giant">Showreel</h2>
-          <p class="section-subtitle">Google Drive of the Showreel</p>
-        </div>
-        
-        <div class="showreel-layout">
-          <div class="video-frame">
-            <!-- Google Drive video frame embed (replaces design embedding) -->
-            <iframe src="https://drive.google.com/file/d/1zha39bRi6Nd2dIxXZQNRMtEUIP5lx8Fs/preview" 
-                    allow="autoplay" 
-                    allowfullscreen 
-                    loading="lazy"
-                    title="Official Showreel Video"></iframe>
-          </div>
-          
-          <div class="showreel-actions">
-            <a href="https://drive.google.com/file/d/1zha39bRi6Nd2dIxXZQNRMtEUIP5lx8Fs/view?usp=sharing" 
-               target="_blank" 
-               rel="noopener" 
-               class="cta-btn"
-               id="drive-link-btn">
-               Open in Google Drive
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Artworks / Showcase Section -->
-    <section id="artworks" class="artworks-section" aria-label="Graphic Design Artworks">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title-giant">Artworks</h2>
-          <p class="section-subtitle">Graphic Designs & Art Clippings</p>
-        </div>
-        
-        <!-- Filter Bar -->
-        <div class="artworks-filter" id="filter-bar" role="tablist">
-          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" id="filter-all">All</button>
-          <button class="filter-btn" data-filter="video" role="tab" aria-selected="false" id="filter-video">Video Clips</button>
-          <button class="filter-btn" data-filter="graphic" role="tab" aria-selected="false" id="filter-graphic">Graphics</button>
-          <button class="filter-btn" data-filter="motion" role="tab" aria-selected="false" id="filter-motion">3D Motion</button>
-        </div>
-        
-        <!-- Gallery Grid -->
-        <div class="gallery-grid" id="gallery-grid" role="region" aria-live="polite">
-          <!-- Populated dynamically by script.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section" aria-label="Contact Details">
-      <div class="container">
-        <div class="contact-layout">
-          <div class="contact-info-panel">
-            <h3>Contact Me</h3>
-            <p>
-              Looking to collaborate on a video project, create stunning graphics, or just have a chat? Drop me a message or connect via any of the direct handles below!
-            </p>
-            
-            <div class="contact-card-container">
-              <!-- Twitter/X -->
-              <a class="contact-badge" id="contact-twitter" href="https://x.com/zeldddd_" target="_blank" rel="noopener">
-                <div class="contact-badge-header">
-                  <div class="contact-badge-icon">&#x1F517;</div>
-                  <span class="contact-badge-title">Twitter / X</span>
-                </div>
-                <span class="contact-badge-value">@zeldddd_</span>
-              </a>
-              
-              <!-- Email -->
-              <a class="contact-badge" id="contact-email" href="mailto:zelddd26@gmail.com">
-                <div class="contact-badge-header">
-                  <div class="contact-badge-icon">&#x2709;</div>
-                  <span class="contact-badge-title">Email</span>
-                </div>
-                <span class="contact-badge-value">zelddd26@gmail.com</span>
-              </a>
-              
-              <!-- Discord -->
-              <a class="contact-badge" id="contact-discord" href="https://discord.com/users/@zeldddd_" target="_blank" rel="noopener">
-                <div class="contact-badge-header">
-                  <div class="contact-badge-icon">&#x1F4AC;</div>
-                  <span class="contact-badge-title">Discord</span>
-                </div>
-                <span class="contact-badge-value">@zeldddd_</span>
-              </a>
-              
-              <!-- Phone -->
-              <a class="contact-badge" id="contact-phone" href="tel:+639167643338">
-                <div class="contact-badge-header">
-                  <div class="contact-badge-icon">&#x1F4DE;</div>
-                  <span class="contact-badge-title">Phone</span>
-                </div>
-                <span class="contact-badge-value">+63 916-764-3338</span>
-              </a>
-            </div>
-          </div>
-          
-          <!-- Contact Form Panel -->
-          <div class="contact-form-card">
-            <form id="contact-form">
-              <div class="form-group">
-                <label for="form-name">Full Name</label>
-                <input type="text" id="form-name" placeholder="John Doe" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="form-email">Email Address</label>
-                <input type="email" id="form-email" placeholder="john@example.com" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="form-message">Message</label>
-                <textarea id="form-message" placeholder="Describe your project details..." required></textarea>
-              </div>
-              
-              <button type="submit" class="cta-btn form-submit-btn" id="form-submit-btn">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Lightbox Modal Modal (Visual Art popups) -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image Viewport">
-    <div class="lightbox-content-box">
-      <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close image popup">&times;</button>
-      <div class="lightbox-img-holder">
-        <img id="lightbox-img" src="" alt="Popup view">
-      </div>
-      <div class="lightbox-footer-info">
-        <div>
-          <h3 class="lightbox-title-text" id="lightbox-title">Artwork Title</h3>
-          <span class="lightbox-category-text" id="lightbox-category">Category</span>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer Section -->
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-header">
+      <p class="contact-label reveal">- Get in Touch</p>
+      <h2 class="contact-heading reveal reveal-delay-1">
+        LET'S<br>
+        <em>Work</em><br>
+        TOGETHER
+      </h2>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card reveal" href="mailto:zelddd26@gmail.com">
+        <span class="c-icon">@</span>
+        <p class="c-platform">Email Address</p>
+        <p class="c-handle">zelddd26@gmail.com</p>
+      </a>
+      <a class="contact-card reveal reveal-delay-1" href="https://x.com/zeldddd_" target="_blank" rel="noreferrer">
+        <span class="c-icon">X</span>
+        <p class="c-platform">Twitter / X</p>
+        <p class="c-handle">@zeldddd_</p>
+      </a>
+      <a class="contact-card reveal reveal-delay-2" href="tel:+639167643338">
+        <span class="c-icon">TEL</span>
+        <p class="c-platform">Phone Number</p>
+        <p class="c-handle">+63 916-764-3338</p>
+      </a>
+      <a class="contact-card reveal reveal-delay-3" href="https://discord.com/users/@zeldddd_" target="_blank"
+        rel="noreferrer">
+        <span class="c-icon">#</span>
+        <p class="c-platform">Discord</p>
+        <p class="c-handle">@zeldddd_</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="container">
-      <div class="footer-content">
-        <span class="footer-brand">&copy; Zeld's Portfolio</span>
-        <span class="footer-copy">Crafted by Vxizocery &bull; Recreated Locally</span>
-      </div>
-    </div>
+    <span class="footer-logo">ZELD'S FRAME BY FRAME</span>
+    <span>Freelance Video Editor &amp; Graphic Designer</span>
+    <span>&copy; 2026</span>
   </footer>
-
-  <!-- JS Controller Script -->
   <script src="script.js"></script>
 </body>
+
 </html>
